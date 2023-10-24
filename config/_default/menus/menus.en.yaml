@@ -6806,19 +6806,6 @@ api:
         - ListSecurityFilters
       unstable: []
       order: 18
-  - name: Mute or unmute a finding
-    url: '#mute-or-unmute-a-finding'
-    identifier: security-monitoring-mute-or-unmute-a-finding
-    parent: security-monitoring
-    generated: true
-    params:
-      versions:
-        - v2
-      operationids:
-        - UpdateFinding
-      unstable:
-        - v2
-      order: 3
   - name: Get a finding
     url: '#get-a-finding'
     identifier: security-monitoring-get-a-finding
@@ -6829,6 +6816,19 @@ api:
         - v2
       operationids:
         - GetFinding
+      unstable:
+        - v2
+      order: 2
+  - name: Mute or unmute a batch of findings
+    url: '#mute-or-unmute-a-batch-of-findings'
+    identifier: security-monitoring-mute-or-unmute-a-batch-of-findings
+    parent: security-monitoring
+    generated: true
+    params:
+      versions:
+        - v2
+      operationids:
+        - MuteFindings
       unstable:
         - v2
       order: 2
